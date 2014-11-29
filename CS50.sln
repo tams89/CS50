@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CS50", "CS50\CS50.fsproj", "{A5405244-6132-4288-B6F1-747358CBA9A4}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CS50.FSharp", "CS50\CS50.FSharp.fsproj", "{A5405244-6132-4288-B6F1-747358CBA9A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS50.CSharp", "CS50.CSharp\CS50.CSharp.csproj", "{69EED4CE-BA74-4808-838F-620886088860}"
 EndProject
