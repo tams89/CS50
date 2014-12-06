@@ -1,13 +1,11 @@
 ﻿namespace CS50.CSharp
 {
-    public class Program
+    public static class PSet3
     {
-        private static void Main(string[] args)
-        {
-            var values = new[] { 4, 3, 2, 1 };
-            Sort(values, values.Length);
-        }
+    }
 
+    public static class PSet3Custom
+    {
         public static void Sort(int[] values, int n)
         {
             bool unSorted = true;

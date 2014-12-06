@@ -1,5 +1,4 @@
-﻿using CS50.CSharp;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CS50.Test
 {
@@ -10,7 +9,7 @@ namespace CS50.Test
         public void CanFindLowestValue()
         {
             var values = new[] { 4, 3, 1, 2 };
-            var lowest = Program.LowestValue(values, 0, values.Length);
+            var lowest = CSharp.PSet3Custom.LowestValue(values, 0, values.Length);
             Assert.IsTrue(lowest[0] == 1);
         }
 
@@ -18,7 +17,7 @@ namespace CS50.Test
         public void CanShift()
         {
             var values = new[] { 4, 3, 2, 1 };
-            Program.Shift(values, 0, values.Length - 1);
+            CSharp.PSet3Custom.Shift(values, 0, values.Length - 1);
             Assert.IsTrue(values[0] == 4 && values[1] == 4 && values[2] == 3 && values[3] == 2);
         }
 
@@ -26,7 +25,7 @@ namespace CS50.Test
         public void CanShiftUnOrdered()
         {
             var values = new[] { 4, 3, 1, 5, 9, 78, 7 };
-            Program.Shift(values, 0, 2);
+            CSharp.PSet3Custom.Shift(values, 0, 2);
             CollectionAssert.AreEqual(values, new[] { 4, 4, 3, 5, 9, 78, 7 });
         }
 
@@ -35,7 +34,7 @@ namespace CS50.Test
         {
             var values = new[] { 4, 3, 1, 5, 9, 78, 7 };
             var sortedList = new[] { 1, 3, 4, 5, 7, 9, 78 };
-            Program.Sort(values, values.Length);
+            CSharp.PSet3Custom.Sort(values, values.Length);
             CollectionAssert.AreEqual(values, sortedList);
         }
     }
